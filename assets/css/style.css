@@ -3,6 +3,8 @@
 
 ul, menu {
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 a {
@@ -19,6 +21,8 @@ body {
     /* color  */
     --color_black: #000;
     --color_white: #fff;
+    --color-gray: #e2e2e2;
+    --color-gray-1: #b8b2b2;
 
     /* padding  */
     --pt: 40px;
@@ -33,6 +37,7 @@ body {
     top: 0px;
     left: 0px;
     background-color: var(--color_white);
+    z-index: 10;
 }
 .header_section .logo{
     width: 20%;
@@ -78,6 +83,17 @@ body {
     
 }
 
+.lang_translate button.lang_t {
+    border: 2px solid var(--color_black);
+}
+
+
+button.lang_t .goog-te-gadget {
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    color: #666;
+    white-space: nowrap;
+}
 
 
 /* banner section  */
@@ -133,4 +149,86 @@ body {
     min-height: 150px;
     height: 100%;
     object-fit: cover;
+}
+
+
+
+/* footer section  */
+.footer_section {
+    border-top: 1px solid var(--color-gray);
+}
+
+.footer_item li a {
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: var(--color_black);
+    position: relative;
+    
+
+}
+.footer_item li a.home_page::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color_black);
+    transition: all 0.3s;
+    transform-origin: left;
+}
+.footer_item li a.home_page:hover::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0px;
+    width: 0%;
+    height: 1px;
+    background-color: var(--color_black);
+    
+}
+.footer_item li a.about_page::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0px;
+    width: 0%;
+    height: 1px;
+    background-color: var(--color_black);
+    transition: all 0.3s;
+    transform-origin: left;
+}
+.footer_item li a.about_page:hover::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color_black);
+    
+}
+
+.social_icons li a {
+    font-size: 1.25rem;
+    color: var(--color-gray-1);
+    font-weight: 500;
+    transition: all .3s ease;
+}
+.social_icons li a:hover {
+    font-size: 1.25rem;
+    color: var(--color-black);
+}
+
+
+/* footer bottom  */
+.footer_bottom {
+    border-top: 1px solid var(--color-gray);
+}
+
+.copyright {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-gray-1);
+    text-transform: capitalize;
 }

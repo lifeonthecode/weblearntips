@@ -6,7 +6,7 @@
     <title>weblearntips</title>
     <!-- css link  -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -24,13 +24,13 @@
                  <nav class="main_menu">
                     <menu class="menu_items d-flex align-items-center gap-4">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Abouts</a></li>
+                        <li><a href="about.html" target="_blank">Abouts</a></li>
                     </menu>
                  </nav>
 
                 <!-- language translate -->
                 <div class="lang_translate">
-                    <button id="lang"></button>
+                    <button class="lang_t" id="google_translate_elements"></button>
                 </div>
             </div>
         </div>
@@ -82,7 +82,74 @@
                 </div>
             </div>
         </section>
+        <!-- article section  -->
+        <section class="article_section">
+            <div class="container-sm">
+                <div class="row">
+                    <h3 class="article_title text-capitalize">Misconceptions about freelancing</h3>
+
+                    <div class="col-xl-6">
+                        <div class="article_image">
+                            <img src="assets/images/article/article_image_1.jpg" alt="">
+                            <div class="article_slide">
+                                <div class="slider_container ">
+                                    <div class="owl-carousel">
+                                        <div class="slider_item">
+                                            <img src="assets/images/article/slider/slider_1.jpg" alt="slider_image_1">
+                                        </div>
+                                        <div class="slider_item">
+                                            <img src="assets/images/article/slider/slider_2.jpg" alt="slider_image_2">
+                                        </div>
+                                        <div class="slider_item">
+                                            <img src="assets/images/article/slider/slider_3.jpg" alt="slider_image_3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6">
+                        <div class="article_texts">
+                            <article>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+
+    <footer class="footer_section pt-3">
+        <div class="container-sm">
+            <div class="row ">
+                <div class="col-xl-6">
+                    <div class="footer_menu">
+                        <ul class="footer_item d-flex gap-3 align-items-center">
+                            <li><a href="index.html" class="home_page">Home</a></li>
+                            <li><a href="about.html" target="_blank" class="about_page">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="footer_social_media justify-content-end">
+                        <ul class="social_icons d-flex align-items-center justify-content-end gap-3">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom text-center pb-2 pt-3 mt-3">
+                <p class="copyright"> &copy copyright <span id="current_year"></span> </p>
+            </div>
+        </div>
+
+    </footer>
 
 
 
@@ -93,15 +160,19 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/slider.js"></script>
+
+
+
 <script type="text/javascript">
-    function googleTranslateElementInit() {
+    function googleTranslateFun() {
         new google.translate.TranslateElement(
             {pageLanguage: 'en'},
-            'lang'
+            'google_translate_elements'
         );
     }
 </script>
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateFun">
 </script>
+
 <script src="assets/js/main.js"></script>
 </html>

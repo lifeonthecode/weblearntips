@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weblearntips</title>
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- header section  -->
+    <header class="header_section">
+        <div class="container-sm">
+            <div class="header d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="#"><img src="assets/images/logo/logo.jpg" alt="logo"></a>
+                </div>
+        
+                <!-- manu bar  -->
+                 <nav class="main_menu">
+                    <menu class="menu_items d-flex align-items-center gap-4">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Abouts</a></li>
+                    </menu>
+                 </nav>
+
+                <!-- language translate -->
+                <div class="lang_translate">
+                    <button class="lang_t" id="google_translate_elements"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+</body>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- google translator  -->
+<script type="text/javascript">
+    function googleTranslateFun() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_elements'
+        );
+    }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateFun">
+</script>
+</html>
