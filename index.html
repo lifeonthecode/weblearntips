@@ -27,6 +27,11 @@
                         <li><a href="#">Abouts</a></li>
                     </menu>
                  </nav>
+
+                <!-- language translate -->
+                <div class="lang_translate">
+                    <button id="lang"></button>
+                </div>
             </div>
         </div>
     </header>
@@ -88,5 +93,15 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/slider.js"></script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'lang'
+        );
+    }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 <script src="assets/js/main.js"></script>
 </html>
