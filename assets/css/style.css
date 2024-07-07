@@ -1,0 +1,136 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+ul, menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+:root {
+    /* color  */
+    --color_black: #000;
+    --color_white: #fff;
+
+    /* padding  */
+    --pt: 40px;
+    --pb: 40px;
+}
+
+
+
+/* header section  */
+.header_section {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: var(--color_white);
+}
+.header_section .logo{
+    width: 20%;
+}
+
+.header_section .logo a img{
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+}
+
+.main_menu {
+    width: 70%;
+}
+
+.menu_items li a {
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: var(--color_black);
+    position: relative;
+    
+
+}
+.menu_items li a::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0px;
+    width: 0%;
+    height: 1px;
+    background-color: var(--color_black);
+    transition: all 0.3s;
+    transform-origin: left;
+}
+.menu_items li a:hover::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color_black);
+    
+}
+
+
+
+/* banner section  */
+.banner_section {
+    padding-bottom: var(--pt);
+}
+
+
+.article_section {
+    padding-bottom: var(--pb);
+}
+
+.banner img {
+    max-height: 400px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* article section  */
+.article_title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color_black);
+    margin-bottom: 1.5rem;
+}
+
+.article_texts article {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color_black);
+    line-height: 1.8rem;
+}
+
+
+.article_image img {
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.slider_item {
+    max-height: 150px;
+    height: 100%;
+}
+
+.slider_item img {
+    width: 100%;
+    min-height: 150px;
+    height: 100%;
+    object-fit: cover;
+}
